@@ -1,0 +1,60 @@
+.body{
+    margin: 0;
+    padding:0 ;
+    font:sans-serif ;
+    font-size: 14px;
+    box-sizing: border-box;
+   
+}
+.carousel{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    border: 10px solid gray;
+  
+}
+.carousel figure{
+    width: 400%;
+    position: relative;
+    margin: 0;
+    animation: animate 20s linear infinite;
+}
+
+
+@keyframes animate{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+     95%{
+        left: -300%;
+    }
+   
+    100%{
+        left: 0;
+    }
+}
+.carousel figure img{
+    width: 25%;
+    float: left;
+}
